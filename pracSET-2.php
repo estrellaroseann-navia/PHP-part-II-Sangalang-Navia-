@@ -30,7 +30,7 @@
     if(isset($_POST['submit'])) {
 
         function calculateWordFrequency($text) {
-            $stopWords = array("the", "and", "in", "a", "is", "of", "my", "to", "our", "we", "was"); 
+            $stopWords = array("the", "and", "in", "a", "is", "of", "my", "to", "our", "we", "was", "as", "your", "when"); 
             $words = str_word_count(strtolower($text), 1); 
             $words = array_diff($words, $stopWords); 
             $wordFreq = array_count_values($words); 
